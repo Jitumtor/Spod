@@ -13,14 +13,13 @@ def mainmenu():
   if not os.path.exists('smssenderdb.pickle'):
     print("1 STEP => SETUP API SETTINGS")
   choicest1 = input("""\033[1;32m     
-   (`|\/|(` (`[~|\ ||\[~|)
-   _)|  |_) _)[_| \||/[_|\           
+   
 \033[1;0m                                                  
     === main menu ====
     \033[1;33m
-    1. Single SMS:   
-    2. Bulk SMS:     
-    3. API Settings: 
+    1. Simjack number:   
+    2. bulk infomation:     
+    3. Host Settings: 
     4. Exit: \033[1;0m        
     Please enter your choice [1-4]: """)
   if choicest1 == "1":
@@ -41,8 +40,7 @@ def mainmenu():
     mainmenu()
 def apisettings():
   choicest = input("""\033[1;32m  
-   (`|\/|(` (`[~|\ ||\[~|)
-   _)|  |_) _)[_| \||/[_|\
+   
 \033[1;0m
 
   === = Proovl.com API Settings ===
@@ -80,8 +78,7 @@ def apisettings():
 
 def singlesms():
   print ("""\033[1;32m 
-   (`|\/|(` (`[~|\ ||\[~|)
-   _)|  |_) _)[_| \||/[_|\
+   
  \033[1;0m                         
                           
   """)
@@ -151,8 +148,7 @@ def singlesms():
 def bulksms():
   print("\033[H\033[J")
   print (""" \033[1;32m
-   (`|\/|(` (`[~|\ ||\[~|)
-   _)|  |_) _)[_| \||/[_|\
+   
        \033[1;0m                   
                           
   """)  
